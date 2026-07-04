@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+.vercel
+
+# Local design-reference images (not used by the app, not for distribution)
+public/116101-2560x1600-desktop-hd-the-big-bang-theory-wallpaper.jpg
+public/MV5BZDA3ZDEwZDYtZjU5MS00YTk4LTg1YTUtNDRmYWRiN2VmZmZmXkEyXkFqcGc@._V1_.jpg
+public/s-l1200.jpg

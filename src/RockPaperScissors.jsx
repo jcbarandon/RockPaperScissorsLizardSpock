@@ -1,30 +1,38 @@
-import React from "react";
+const OUTCOME_CATCHPHRASES = {
+  win: "Bazinga!",
+  lose: "That's my spot.",
+  draw: "Fascinating.",
+};
 
-function RockPaperScissors({ userChoice, computerChoice }) {
-  const getResult = (user, computer) => {
-    if (user === computer) return "It's a draw!";
-    if (
-      (user === "rock" && computer === "scissors") ||
-      (user === "paper" && computer === "rock") ||
-      (user === "scissors" && computer === "paper")
-    ) {
-      return "You win!";
-    }
-    return "You lose!";
-  };
+const OUTCOME_MESSAGES = {
+  win: "You win!",
+  lose: "You lose!",
+  draw: "It's a draw!",
+};
 
-  const result = getResult(userChoice, computerChoice);
+function RockPaperScissors({ userChoice, computerChoice, choices, outcome, onPlayAgain }) {
+  const iconFor = (id) => choices.find((choice) => choice.id === id)?.icon;
 
   return (
-    <div className="result-box">
-      <h2 className="result-title">Your Result</h2>
-      <p className="result-detail">
-        You chose: <strong>{userChoice}</strong>
-      </p>
-      <p className="result-detail">
-        Computer chose: <strong>{computerChoice}</strong>
-      </p>
-      <p className="result-message">{result}</p>
+    <div className={`result-box result-${outcome}`}>
+      <div className="result-versus">
+        <div className="result-side">
+          <span className="result-icon">{iconFor(userChoice)}</span>
+          <span className="result-side-label">You</span>
+        </div>
+        <span className="result-vs">VS</span>
+        <div className="result-side">
+          <span className="result-icon">{iconFor(computerChoice)}</span>
+          <span className="result-side-label">Computer</span>
+        </div>
+      </div>
+
+      <p className="result-catchphrase">{OUTCOME_CATCHPHRASES[outcome]}</p>
+      <p className="result-message">{OUTCOME_MESSAGES[outcome]}</p>
+
+      <button className="play-again-button" onClick={onPlayAgain}>
+        Play Again
+      </button>
     </div>
   );
 }
