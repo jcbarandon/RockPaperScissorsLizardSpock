@@ -1,6 +1,19 @@
-# Rock Paper Scissors Game
+# Rock, Paper, Scissors, Lizard, Spock — Bazinga Edition
 
-This is my final version of the game made using React and Vite.
+A Big Bang Theory-themed take on the classic Sheldon Cooper-approved
+expansion of Rock Paper Scissors, built with React and Vite.
+
+**Live demo:** [rock-paper-scissors-lizard-spock-bice.vercel.app](https://rock-paper-scissors-lizard-spock-bice.vercel.app)
+
+## Features
+
+- Full five-way ruleset: Rock, Paper, Scissors, Lizard, and Spock, each
+  beating two of the others
+- Comic-book / whiteboard-inspired UI — Bangers & Poppins fonts, badge-style
+  choice buttons, and a background of faint formulas and atom diagrams
+- Show catchphrases on every round: **Bazinga!** for a win, **"That's my
+  spot."** for a loss, **"Fascinating."** for a draw
+- Running scoreboard for wins, draws, and losses
 
 ## Running the project
 
