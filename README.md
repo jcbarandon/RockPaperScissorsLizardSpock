@@ -3,7 +3,7 @@
 A Big Bang Theory-themed take on the classic Sheldon Cooper-approved
 expansion of Rock Paper Scissors, built with React and Vite.
 
-**Live demo:** [rock-paper-scissors-lizard-spock-bice.vercel.app](https://rock-paper-scissors-lizard-spock-bice.vercel.app)
+**Live demo:** [joebarandon-rpsls.vercel.app/](https://joebarandon-rpsls.vercel.app/)
 
 ## Features
 
